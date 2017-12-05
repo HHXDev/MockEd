@@ -10,10 +10,12 @@ import { SortablejsOptions } from 'angular-sortablejs';
 })
 export class CreatorComponent implements OnInit {
 
-  optionsA: SortablejsOptions = {
+  optionsA: SortablejsOptions  = {
     group: 'shared',
     animation: 100
   };
+
+
   optionsB: SortablejsOptions = {
     animation: 200,
     sort: false,
