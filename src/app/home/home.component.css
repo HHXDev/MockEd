@@ -1,14 +1,30 @@
-.fondo{
+.backg{
     background: url('/assets/icons/bg.png');
     background-repeat: repeat-x;
-    width: 100%;
-    height: 800px;
-    color: #ffffff;
+    background-size: cover;
+    height: 780px;
     padding: 10px;
-    
-
 }
 
-.full{
-    
+.course{
+    text-align: center;
 }
+
+.formcourse{
+    background-color: #d3d3d3;
+    margin-top: 30%;
+    color: rgb(20, 20, 20);
+}
+
+.btn-creation {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #E28810;
+    border-color: #E28810;
+  }
+
+  .formstyle{
+      font-size: 1.8em;
+  }
