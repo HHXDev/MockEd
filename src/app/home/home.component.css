@@ -2,7 +2,7 @@
     background: url('/assets/icons/bg.png');
     background-repeat: repeat-x;
     background-size: cover;
-    height: 780px;
+    height: 580px;
     padding: 10px;
 }
 
@@ -12,7 +12,7 @@
 
 .formcourse{
     background-color: #d3d3d3;
-    margin-top: 30%;
+    margin-top: 15%;
     color: rgb(20, 20, 20);
 }
 
@@ -23,8 +23,13 @@
     color: #fff;
     background-color: #E28810;
     border-color: #E28810;
+    font-size: 1.8em;
   }
 
   .formstyle{
       font-size: 1.8em;
+  }
+
+  .downmenu{
+
   }

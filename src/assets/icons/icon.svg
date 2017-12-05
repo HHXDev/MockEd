@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="152px" height="152px" viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#041777" x="0" y="0" width="152" height="152" rx="8"></rect>
+        <rect id="Rectangle-2" fill="#13EB70" x="57" y="36" width="14" height="14" rx="7"></rect>
+        <rect id="Rectangle-2-Copy" fill="#EB8F13" x="105" y="36" width="14" height="85" rx="7"></rect>
+        <rect id="Rectangle-2-Copy-2" fill="#EB13C8" transform="translate(64.000000, 85.500000) rotate(45.000000) translate(-64.000000, -85.500000) " x="30" y="78.5" width="68" height="14" rx="7"></rect>
+        <rect id="Rectangle-2-Copy-3" fill="#EB13C8" transform="translate(64.000000, 85.500000) scale(-1, 1) rotate(45.000000) translate(-64.000000, -85.500000) " x="30" y="78.5" width="68" height="14" rx="7"></rect>
+    </g>
+</svg>
