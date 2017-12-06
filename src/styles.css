@@ -60,6 +60,19 @@
     background: url('/assets/icons/cartg.svg');
     background-repeat: no-repeat;
 }
+.edita{
+    background: url('/assets/icons/edita.svg');
+    background-repeat: no-repeat;
+}
+.disena{
+    background: url('/assets/icons/diseña.svg');
+    background-repeat: no-repeat;
+}
+.publica{
+    background: url('/assets/icons/publica.svg');
+    background-repeat: no-repeat;
+}
+
 
 
 

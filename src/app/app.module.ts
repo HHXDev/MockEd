@@ -12,6 +12,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { AppRoutingModule } from './app-routing.module';
 import { CreatorComponent } from './creator/creator.component';
 import { HomeComponent } from './home/home.component';
+import { PublishComponent } from './publish/publish.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     CreatorComponent,
     HomeComponent,
+    PublishComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,31 +1,63 @@
+
 <div class="container-fluid backg">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-6 centered formcourse">
+  <div class="container"> 
+      <div class="jumbotron">
           
           <h1 class="course">Crea tu curso</h1>
+
           <hr>
+
           <form (ngSubmit)="onSubmit()" #course="ngForm" class="formstyle">
             <div class="form-group">
-              <label for="courseName">Nombre del Curso</label>
-              <input type="text" class="form-control" id="courseName" required [(ngModel)]="course.courseName" name="courseName" placeholder="Ingresa el Nombre del Curso...">
+              <span class="glyphicon glyphicon-book icon"></span><label for="courseName"> Nombre del Curso</label>
+              <input type="text" class="form-control formcontent" id="courseName" required [(ngModel)]="course.courseName" name="courseName" placeholder="Ingresa el Nombre del Curso...">
             </div>
 
             <div class="form-group">
-              <label for="professor">Nombre del Profesor</label>
-              <input type="text" class="form-control" id="professor" required [(ngModel)]="course.professor" name="professor"  placeholder="Ingresa el Nombre del profesor...">
+              <span class="glyphicon glyphicon-user icon"> </span><label for="professor"> Nombre del Profesor</label>
+              <input type="text" class="form-control formcontent" id="professor" required [(ngModel)]="course.professor" name="professor"  placeholder="Ingresa el Nombre del profesor...">
             </div>
     
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="text" class="form-control" id="email" required [(ngModel)]="course.email" name="email"  placeholder="Ingresa tu correo electrónico...">
+                <span class="glyphicon glyphicon-envelope icon"></span><label for="email"> Email</label>
+              <input type="text" class="form-control formcontent" id="email" required [(ngModel)]="course.email" name="email"  placeholder="Ingresa tu correo electrónico...">
             </div>
+
           </form>
+
           <hr>
+
           <button type="submit" class="center-block btn btn-creation" (click)="newCourse();" routerLink="/creator">Crear</button>
       </div>
-      <div class="col-md-3"></div>
-     </div>
    </div>
-</div>
+  </div>
+  <div class="container-fluid footerHome">
+    <div class="container">
+      <div class="row footstick">
+            <div class="col-md-2">
+              <img src="./assets/icons/design.svg" alt="" class="steps">
+              <h1>Diseña</h1> 
+            </div>
+        
+            <div class="col-md-2">
+              <span class="glyphicon glyphicon-menu-right footicon"></span>
+            </div>
+        
+            <div class="col-md-2">
+              <img src="./assets/icons/edita.svg" alt="" class="steps">
+              <h1>Edita</h1> 
+            </div>
+            
+            <div class="col-md-2">
+              <span class="glyphicon glyphicon-menu-right footicon"></span>
+            </div>
+
+            <div class="col-md-2">
+              <img src="./assets/icons/publica.svg" alt="" class="steps">
+              <h1>Publica</h1> 
+            </div>
+          </div>
+          
+    </div>
+  </div>
+

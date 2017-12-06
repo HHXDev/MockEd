@@ -2,24 +2,27 @@
     background: url('/assets/icons/bg.png');
     background-repeat: repeat-x;
     background-size: cover;
-    height: 580px;
+    height: 650px;
     padding: 10px;
 }
 
 .course{
     text-align: center;
+    color: #0f0f0f;
 }
 
 .formcourse{
     background-color: #d3d3d3;
     margin-top: 15%;
     color: rgb(20, 20, 20);
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .btn-creation {
     width: 250px;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
     color: #fff;
     background-color: #E28810;
     border-color: #E28810;
@@ -29,7 +32,29 @@
   .formstyle{
       font-size: 1.8em;
   }
-
-  .downmenu{
-
+  .footicon{
+      margin-top: 50px;
+      font-size: 80px;
+      margin-bottom: 50px;
   }
+  .footerHome{
+      padding-top: 200px;
+      background-color: #0F0F0F;
+      height: auto;
+      color: #fff;
+      text-align: center;
+      
+  }
+
+  .steps{
+      width: 150px;
+      height: 150px;
+  }
+.formcontent{
+    font-size: .7em;
+    padding: 25px;
+}
+
+.icon{
+    padding: 10px;
+        }
