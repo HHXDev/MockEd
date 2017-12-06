@@ -8,6 +8,7 @@ import { SortablejsModule } from 'angular-sortablejs';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { CreatorComponent } from './creator/creator.component';
@@ -18,7 +19,7 @@ import { PublishComponent } from './publish/publish.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CreatorComponent,
+    CreatorComponent, 
     HomeComponent,
     PublishComponent,
   ],
@@ -29,7 +30,8 @@ import { PublishComponent } from './publish/publish.component';
     ModalModule.forRoot(),
     SortablejsModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -37,3 +39,4 @@ import { PublishComponent } from './publish/publish.component';
 
 
 export class AppModule { }
+
