@@ -1,35 +1,30 @@
 
 <div class="container-fluid backg">
-  <div class="container"> 
-      <div class="jumbotron">
-          
-          <h1 class="course">Crea tu curso</h1>
-
-          <hr>
-
-          <form (ngSubmit)="onSubmit()" #course="ngForm" class="formstyle">
-            <div class="form-group">
-              <span class="glyphicon glyphicon-book icon"></span><label for="courseName"> Nombre del Curso</label>
-              <input type="text" class="form-control formcontent" id="courseName" required [(ngModel)]="course.courseName" name="courseName" placeholder="Ingresa el Nombre del Curso...">
-            </div>
-
-            <div class="form-group">
-              <span class="glyphicon glyphicon-user icon"> </span><label for="professor"> Nombre del Profesor</label>
-              <input type="text" class="form-control formcontent" id="professor" required [(ngModel)]="course.professor" name="professor"  placeholder="Ingresa el Nombre del profesor...">
-            </div>
-    
-            <div class="form-group">
-                <span class="glyphicon glyphicon-envelope icon"></span><label for="email"> Email</label>
-              <input type="text" class="form-control formcontent" id="email" required [(ngModel)]="course.email" name="email"  placeholder="Ingresa tu correo electrónico...">
-            </div>
-
-          </form>
-
-          <hr>
-
-          <button type="submit" class="center-block btn btn-creation" (click)="newCourse();" routerLink="/creator">Crear</button>
+  <div class="container">
+    <div class="jumbotron start">
+    <h1>Crea tu curso</h1>
+    <form (ngSubmit)="onSubmit()" #courseForm="ngForm">
+      <div class="form-group">
+        <label for="courseName">Nombre del Curso</label>
+        <input type="text" class="form-control" id="courseName" required minlength="4" [(ngModel)]="course.courseName" name="courseName">
       </div>
-   </div>
+
+      <div class="form-group">
+        <label for="professor">Nombre del Profesor</label>
+        <input type="text" class="form-control" id="professor" required minlength="2" [(ngModel)]="course.professor" name="professor">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email"  class="form-control" id="email" required [(ngModel)]="course.email" name="email" email>
+      </div>
+
+      <button type="submit" class="btn btn-success" [disabled]="!courseForm.form.valid">Crear</button>
+
+    </form>
+  </div>
+</div>
+
   </div>
   <div class="container-fluid footerHome">
     <div class="container">

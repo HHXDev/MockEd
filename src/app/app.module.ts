@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CreatorComponent } from './creator/creator.component';
 import { HomeComponent } from './home/home.component';
 import { PublishComponent } from './publish/publish.component';
+import { CourseService } from './course.service';
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import { PublishComponent } from './publish/publish.component';
     FormsModule,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [CourseService],
   bootstrap: [AppComponent],
 })
 
