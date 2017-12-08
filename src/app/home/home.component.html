@@ -1,58 +1,24 @@
 
-<div class="container-fluid backg">
-  <div class="container">
-    <div class="jumbotron start">
-    <h1>Crea tu curso</h1>
-    <form (ngSubmit)="onSubmit()" #courseForm="ngForm">
-      <div class="form-group">
-        <label for="courseName">Nombre del Curso</label>
-        <input type="text" class="form-control" id="courseName" required minlength="4" [(ngModel)]="course.courseName" name="courseName">
-      </div>
+<div class="fondo">
+    <div class="container  jumbotron start">
+        <h1 class="text-center">Crea tu curso</h1>
+        <hr>
+        <form (ngSubmit)="onSubmit()" #courseForm="ngForm">
+          <div class="form-group">
+            <h3><label for="courseName">Nombre del Curso</label></h3>
+            
+            <input type="text" class="form-control" id="courseName" required minlength="4" [(ngModel)]="course.courseName" name="courseName">
+          </div>
 
-      <div class="form-group">
-        <label for="professor">Nombre del Profesor</label>
-        <input type="text" class="form-control" id="professor" required minlength="2" [(ngModel)]="course.professor" name="professor">
-      </div>
-
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email"  class="form-control" id="email" required [(ngModel)]="course.email" name="email" email>
-      </div>
-
-      <button type="submit" class="btn btn-success" [disabled]="!courseForm.form.valid">Crear</button>
-
-    </form>
-  </div>
+          <div class="form-group">
+           <h3> <label for="professor">Nombre del Profesor</label> </h3>
+            <input type="text" class="form-control" id="professor" required minlength="2" [(ngModel)]="course.professor" name="professor">
+          </div>
+          <hr>
+          <button type="submit" class="btn btn-success" [disabled]="!courseForm.form.valid"> <strong>Crear</strong></button>
+  
+        </form>
+    </div>
 </div>
 
-  </div>
-  <div class="container-fluid footerHome">
-    <div class="container">
-      <div class="row footstick">
-            <div class="col-md-2">
-              <img src="./assets/icons/design.svg" alt="" class="steps">
-              <h1>Diseña</h1> 
-            </div>
-        
-            <div class="col-md-2">
-              <span class="glyphicon glyphicon-menu-right footicon"></span>
-            </div>
-        
-            <div class="col-md-2">
-              <img src="./assets/icons/edita.svg" alt="" class="steps">
-              <h1>Edita</h1> 
-            </div>
-            
-            <div class="col-md-2">
-              <span class="glyphicon glyphicon-menu-right footicon"></span>
-            </div>
-
-            <div class="col-md-2">
-              <img src="./assets/icons/publica.svg" alt="" class="steps">
-              <h1>Publica</h1> 
-            </div>
-          </div>
-          
-    </div>
-  </div>
 

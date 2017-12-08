@@ -4,7 +4,7 @@ import { Course } from './course';
 @Injectable()
 export class CourseService {
 
-public curso: Course = new Course('', '', '');
+public curso: Course = new Course('', '');
 
   constructor() { }
 }

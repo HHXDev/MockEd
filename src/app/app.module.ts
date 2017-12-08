@@ -8,19 +8,18 @@ import { SortablejsModule } from 'angular-sortablejs';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { CreatorComponent } from './creator/creator.component';
 import { HomeComponent } from './home/home.component';
-import { PublishComponent } from './publish/publish.component';
 import { CourseService } from './course.service';
+import { PublishComponent } from './publish/publish.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreatorComponent, 
+    CreatorComponent,
     HomeComponent,
     PublishComponent,
   ],
@@ -31,8 +30,7 @@ import { CourseService } from './course.service';
     ModalModule.forRoot(),
     SortablejsModule,
     AppRoutingModule,
-    FormsModule,
-    NgbModule.forRoot()
+    FormsModule
   ],
   providers: [CourseService],
   bootstrap: [AppComponent],
@@ -40,4 +38,3 @@ import { CourseService } from './course.service';
 
 
 export class AppModule { }
-

@@ -5,12 +5,11 @@ import { CreatorComponent } from './creator/creator.component';
 import { PublishComponent } from './publish/publish.component';
 
 const routes: Routes = [
-  
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
   { path: 'creator', component: CreatorComponent },
   { path: 'publish', component: PublishComponent }
-]
+];
 
 @NgModule({
   imports: [

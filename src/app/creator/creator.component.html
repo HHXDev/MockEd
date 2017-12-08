@@ -1,14 +1,17 @@
 
 <div class="container-fluid">
-  <br>
-  <div class="row head"  >
-    <h2> Bienvenido {{course.professor}}, puede comenzar a diseñar su curso de {{course.courseName}}</h2>
-  </div>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">Bienvenido {{course.professor}}</a>   
+        <form class="form-inline">
+          <a class="">{{course.courseName}}</a>
+          <a routerLink="/publish" class="btn btn-outline-primary my-2 my-sm-0" >Generar</a>
+        </form>
+      </nav>
   <div class="row">
     <div class="col-md-4" >
       <h3 class="title"> APERTURA</h3>
       <h4 class="subtitle"><span class="badge badge-default badge-pill">1</span> Introducción</h4>
-      <div class= "contain" [sortablejs] [sortablejsOptions]="optionsA" ></div>
+      <div class= "contain" [sortablejs] [sortablejsOptions]="optionsA"></div>
     </div>
 
     <div class="col-md-4 ">
@@ -32,7 +35,7 @@
     </div>
   </div>
   <br>
-  <div class="row">
+  <div class="container-fluid">
       <div class="mother" [sortablejs] [sortablejsOptions]="optionsB">
             <div class="drag-unit text"></div>
             <div class="drag-unit image"></div>
@@ -42,8 +45,8 @@
             <div class="drag-unit slider"></div>
             <div class="drag-unit acordeon"></div>
             <div class="drag-unit pdf"></div>
-            <div class="drag-unit select" ></div>
-            
+            <div class="drag-unit select"></div>
+  
       </div>
   </div>
-  
+</div>
