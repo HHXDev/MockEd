@@ -14,11 +14,6 @@
     margin-bottom: 50px;
 }
 
-.mother {
-    text-align: center;
-    background-color: #727272;
-}
-
 .title{
     background-color:#0134a1; 
     padding:15px; 
@@ -35,7 +30,7 @@
 }
 
 .contain{
-    height: 500px;
+    height: 580px;
     background-color:#ececec; 
     padding:10px; 
     font-size:16px;
@@ -59,4 +54,10 @@
     vertical-align: baseline;
     background-color: #777;
     border-radius: 10px;
+  }
+
+
+.idea{
+    width: 80px;
+    height: auto;
   }

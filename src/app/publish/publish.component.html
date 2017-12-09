@@ -1,60 +1,28 @@
-<div class="wrapper">
-            <nav id="sidebar">
-                <!-- Sidebar Header -->
-                <div class="sidebar-header">
-                    <h3>{{course.courseName}}</h3>
-                    <strong>{{course.professor}}</strong>
-                </div>
-                <!-- Sidebar Links -->
-                <ul class="list-unstyled components">
-                    <li >
-                        <a href="publish" >Introducción</a>
-                    </li>
-                    <hr>
-                  <li >
-                    <a href="publish" >
-                        
-                        Contenido
-                    </a>
-                  </li>
-                  <li >
-                    <a href="publish" >
-                        
-                        Actividad
-                    </a>
-                  </li>
-                  <hr>
-                  <li >
-                    <a href="publish" >
-                        
-                        Conclusión
-                    </a>
-                  </li>
-                  <li >
-                    <a href="publish" >
-                        
-                        Evaluación
-                    </a>
-                  </li>
-                          
-                </ul>
-            </nav>
-    
-            <div id="content">
-              
-              
-              
+        <nav class="navbar navbar-light bg-light justify-content-between">
+          
+            <img src="./assets/icons/images/idea_logo.png" class="idea" alt="">
+            <form class="form-inline">
+              <a routerLink="/publish" class="btn btn-outline-primary my-2 my-sm-0" >Generar</a>
+            </form>
+          </nav>
+              <div class="container bordered ">
               <div class="col-md-12 elemento">  
                   
                   <div class="col-md-12 ">
-                    <h1 class="text-center">{{course.courseName}}Label</h1>
+                    <h1 >{{course.courseName}} Titulo</h1>
                     <hr>
-                    <h3 class="text-center"> {{course.professor}}Label</h3>
+                    <h3 > {{course.professor}} Autor</h3>
                   </div>
                 </div>
-                <h2>Introducción</h2>
-                <hr>
 
+                <div class="col-md-12 elemento">
+                  <hr>
+                  <h2 >Introducción</h2>
+                  <hr>
+                </div>
+
+                
+                <!--
                 <div class="col-md-12 elemento">  
                     <div class="col-sm-2">  
                       <img src="./assets/icons/text.svg" class="icon" alt="">
@@ -71,8 +39,9 @@
                   </div>
                   <h2>Contenido</h2>
                   <hr>
+                -->
 
-                <!--Texto-->
+                <!--Texto
                 <div class="col-md-12 elemento">
                     
                       <div class="col-sm-2">  
@@ -86,10 +55,10 @@
                       <div class="upload-drop-zone "></div>
                       <button type="button" class="btn btn-primary button">Save</button>
                 </div>
-                <!--Imagen-->
+                -->
 
               
-
+                <!--
                 <div class="col-md-12 elemento" id="slider">
 
                       <div class="col-sm-2">  
@@ -126,11 +95,14 @@
                           </a>
                         </div> 
                 </div>
-                <!-- -->
+               -->
+               <div class="col-md-12 elemento">
+                  <hr>
+                  <h2  >Contenido</h2>
+                  <hr>
+                </div>
 
-                <h2>Actividad</h2>
-                <hr>
-                 
+                <!-- 
                 <div class="col-md-12 elemento">  
                     <div class="col-sm-2">  
                       <img src="./assets/icons/video.svg" class="icon" alt="">
@@ -142,8 +114,28 @@
                     </div>
                     <iframe width="100%" height="600px" src="https://www.youtube.com/embed/uXFUl0KcIkA?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>                  
                 </div>
+              -->
 
+              <div class="col-md-12 elemento">
+                  <hr>
+                  <h2  >Actividad</h2>
+                  <hr>
+                </div>
 
+              
+              <div class="col-md-12 elemento">
+                  <hr>
+                  <h2  >Conclusión</h2>
+                  <hr>
+                </div>
+
+              <div class="col-md-12 elemento">
+                  <hr>
+                  <h2  >Evaluación</h2>
+                  <hr>
+                </div>
+
+              <!--
                 <div class="col-md-12 elemento">  
                     <div class="col-sm-2">  
                       <img src="./assets/icons/act.svg" class="icon" alt="">
@@ -192,7 +184,7 @@
                               </h3>
                           </div>
                       <div class="card-body">
-                        <div class="">
+                        <div class="radio">
                             <label>
                               <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" > Questa è la risposta uno. Fossi in te, la lascerei perdere
                             </label>
@@ -212,26 +204,8 @@
                               <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"> Sulla risposta quattro non ci metterei la mano sul fuoco...
                             </label>
                           </div>
-                  
-                        </div>
-                   
-                        
+                        </div>  
+                      
                 </div>
-
-
-
-
-
-
-
-              </div>
-
-              
-  
-  
-              
-              
-                
-              
-    </div>
-    
+              </div>-->
+            </div>

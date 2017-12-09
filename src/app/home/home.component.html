@@ -5,13 +5,13 @@
         <hr>
         <form (ngSubmit)="onSubmit()" #courseForm="ngForm">
           <div class="form-group">
-            <h3><label for="courseName">Nombre del Curso</label></h3>
+            <h3><label for="courseName">Curso</label></h3>
             
             <input type="text" class="form-control" id="courseName" required minlength="4" [(ngModel)]="course.courseName" name="courseName">
           </div>
 
           <div class="form-group">
-           <h3> <label for="professor">Nombre del Profesor</label> </h3>
+           <h3> <label for="professor">Autor</label> </h3>
             <input type="text" class="form-control" id="professor" required minlength="2" [(ngModel)]="course.professor" name="professor">
           </div>
           <hr>
