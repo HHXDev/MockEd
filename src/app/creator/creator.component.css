@@ -56,8 +56,22 @@
     border-radius: 10px;
   }
 
+.publicar{
+    margin-left: 30px;
+    width: 150px;
+}
 
-.idea{
-    width: 80px;
-    height: auto;
+.animate-show-hide.ng-hide {
+    opacity: 0;
+  }
+  
+  .animate-show-hide.ng-hide-add,
+  .animate-show-hide.ng-hide-remove {
+    transition: all linear 0.5s;
+  }
+  
+  .check-element {
+    border: 1px solid black;
+    opacity: 1;
+    padding: 10px;
   }
