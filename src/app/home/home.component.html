@@ -1,24 +1,27 @@
 
-<div class="fondo">
+<div class="container-fluid fondo">
     <div class="container  jumbotron start">
         <h1 class="text-center">Crea tu curso</h1>
         <hr>
+
         <form (ngSubmit)="onSubmit()" #courseForm="ngForm">
           <div class="form-group">
-            <h3><label for="courseName">Curso</label></h3>
-            
+            <h3>
+              <i class="far fa-file-alt"></i> 
+              <label for="courseName">&nbsp; Curso</label>
+            </h3>
             <input type="text" class="form-control" id="courseName" required minlength="4" [(ngModel)]="course.courseName" name="courseName">
           </div>
-
           <div class="form-group">
-           <h3> <label for="professor">Autor</label> </h3>
+           <h3><i class="fas fa-user"> </i><label for="professor">&nbsp; Autor</label> </h3>
             <input type="text" class="form-control" id="professor" required minlength="2" [(ngModel)]="course.professor" name="professor">
+            <hr>
           </div>
-          <hr>
-          <button type="submit" class="btn btn-success" [disabled]="!courseForm.form.valid"> <strong>Crear</strong></button>
-  
+            <button type="submit" class="btn btn-success text-center" [disabled]="!courseForm.form.valid"> <strong>Crear</strong></button>
         </form>
     </div>
+    
 </div>
+
 
 
