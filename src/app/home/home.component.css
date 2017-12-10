@@ -18,7 +18,7 @@
   margin-top: 300px;
   background-color: #ffffff;
   border-radius: 20px;
-  width: auto;
+  max-width: 600px;
   height: auto;
 }
 
@@ -89,9 +89,9 @@ offset2{
   margin-bottom: 150px;
 }
 
-offset3{
-  margin-top: 180px;
-  margin-bottom: 150px;
+.offset3{
+  margin-top: 80px;
+  margin-bottom: 10px;
 }
 
 .ideafoot{
