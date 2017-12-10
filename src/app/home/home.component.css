@@ -26,6 +26,11 @@
     border-left: 5px solid #42A948; /* green */
     
   }
+
+  .named{
+    
+    color:#ED9039;
+  }
   
   .ng-invalid:not(form)  {
     border-left: 5px solid #a94442; /* red */
@@ -75,11 +80,21 @@
 }
 
 .offset{
-  margin-top: 180px;
+  margin-top: 150px;
   margin-bottom: 150px;
 }
 
 offset2{
   margin-top: 20px;
   margin-bottom: 150px;
+}
+
+offset3{
+  margin-top: 180px;
+  margin-bottom: 150px;
+}
+
+.ideafoot{
+  width:120px;
+
 }
